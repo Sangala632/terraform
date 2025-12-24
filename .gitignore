@@ -1,4 +1,4 @@
-ss# Terraform local working directory
+# Terraform local working directory
 **/.terraform/
 **/.terraform.lock.hcl
 
