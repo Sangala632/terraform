@@ -36,7 +36,7 @@ resource "aws_security_group" "allow_all" {
   tags = merge (
     var.ec2_tags,
     {
-      Name = "${var.project}-${var.sg_name}-${terraform.workspace}"
+      Name = "${var.project}-${var.sg_name}-${terraform.workspace }"
     }
   )
 }
