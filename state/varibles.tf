@@ -44,19 +44,3 @@ variable "sg_tags"{
         Name = "allow_all"
     }
 }
-variable "environment" {
-    default = "dev"
-}
-
-variable "instances" {
-    type    = list
-    default = ["mongodb","redis","mysql","rabbitmq"]
-}
-
-variable "Domain_name" {
-    default = "hellodevsecops.space"
-}
-
-variable "zone_id" {
-    default = "Z0168679G0Y1V181BPMR"
-}

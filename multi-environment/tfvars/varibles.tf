@@ -1,3 +1,7 @@
+variable "project" {
+    default = "Roboshop"
+}
+
 variable "ami_id" {
   type        = string
   description = "AMI id of devSecOps RHEL9"
@@ -5,7 +9,7 @@ variable "ami_id" {
 }
 
 variable "instance_type" {
-    default = "t3.micro"
+    
 }
 
 variable "ec2_tags" {
@@ -44,19 +48,11 @@ variable "sg_tags"{
         Name = "allow_all"
     }
 }
+
 variable "environment" {
-    default = "dev"
+    
 }
 
 variable "instances" {
-    type    = list
-    default = ["mongodb","redis","mysql","rabbitmq"]
-}
-
-variable "Domain_name" {
-    default = "hellodevsecops.space"
-}
-
-variable "zone_id" {
-    default = "Z0168679G0Y1V181BPMR"
+    default = ["mongodb","redis"]
 }
